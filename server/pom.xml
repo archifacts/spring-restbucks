@@ -17,7 +17,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
 	<properties>
 		<java.version>17</java.version>
-		<spring-data-bom.version>2021.1.0-SNAPSHOT</spring-data-bom.version>
 		<spring-native.version>0.11.0-SNAPSHOT</spring-native.version>
 	</properties>
 
@@ -190,7 +189,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 					</image>
 				</configuration>
 				<dependencies>
-					<!-- 
+					<!--
 					<dependency>
 						<groupId>org.springframework.boot.experimental</groupId>
 						<artifactId>spring-boot-thin-layout</artifactId>
@@ -231,12 +230,14 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 							<goal>generate</goal>
 						</goals>
 					</execution>
+					<!--
 					<execution>
 						<id>test-generate</id>
 						<goals>
 							<goal>test-generate</goal>
 						</goals>
 					</execution>
+					-->
 				</executions>
 			</plugin>
 
