@@ -26,8 +26,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springsource.restbucks.order.Order;
-import org.springsource.restbucks.order.Orders;
 import org.springsource.restbucks.order.OrderTestUtils;
+import org.springsource.restbucks.order.Orders;
 
 /**
  * Unit tests for {@link PaymentServiceImpl}.
