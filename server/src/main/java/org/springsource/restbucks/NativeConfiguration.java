@@ -15,12 +15,10 @@
  */
 package org.springsource.restbucks;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.nativex.hint.AccessBits;
 import org.springframework.nativex.hint.AotProxyHint;
-import org.springframework.nativex.hint.NativeHint;
 import org.springframework.nativex.hint.ProxyBits;
-import org.springframework.nativex.hint.TypeHint;
 import org.springsource.restbucks.drinks.Drink;
 
 /**
@@ -32,5 +30,7 @@ import org.springsource.restbucks.drinks.Drink;
 
 // Due to DrinksOptions.BY_NAME (i.e. the usage of a domain type with Spring Data's TypedSort)
 @AotProxyHint(targetClass = Drink.class, proxyFeatures = ProxyBits.IS_STATIC)
-@TypeHint(typeNames = {"org.hibernate.cfg.beanvalidation.TypeSafeActivator"}, access = AccessBits.FULL_REFLECTION)
-class NativeConfiguration {}
+@EntityScan
+class NativeConfiguration {
+
+}
