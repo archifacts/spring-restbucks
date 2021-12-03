@@ -20,15 +20,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 		<spring-native.version>0.11.0-SNAPSHOT</spring-native.version>
 	</properties>
 
-	<profiles>
-		<profile>
-			<id>native</id>
-			<build>
-				<defaultGoal>spring-boot:build-image</defaultGoal>
-			</build>
-		</profile>
-	</profiles>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -196,13 +187,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 				</configuration>
 				<!--
 				<dependencies>
-					<!-- 
 					<dependency>
 						<groupId>org.springframework.boot.experimental</groupId>
 						<artifactId>spring-boot-thin-layout</artifactId>
 						<version>1.0.27.RELEASE</version>
 					</dependency>
-					-->
 				</dependencies>
 				-->
 			</plugin>
